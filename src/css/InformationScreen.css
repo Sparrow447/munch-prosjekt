@@ -1,0 +1,51 @@
+.information-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Use full height to center vertically */
+    text-align: center;
+    background: url("../images/header-test.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.information-container {
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+    max-width: 600px; /* or whatever max width you prefer */
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 2em; /* or your preferred size */
+}
+
+.description {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.accept-button {
+    background-color: #4CAF50; /* or your preferred hex color */
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 4px #999; /* Optional: adds a shadow to the button */
+}
+
+.accept-button:hover {
+    background-color: #45a049; /* Darker shade for hover effect */
+}
+
+.accept-button:active {
+    background-color: #3e8e41; /* Even darker shade when clicked */
+    box-shadow: 0 5px #666; /* Push effect on click */
+    transform: translateY(4px); /* Push effect on click */
+}
