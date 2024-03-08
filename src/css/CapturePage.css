@@ -1,4 +1,7 @@
 .capture-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 800px; /* Adjust width as necessary */
     background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for legibility */
     padding: 40px;
@@ -48,4 +51,10 @@
 .captured-image {
     width: 100%; /* Make the captured image the same size as the webcam video */
     border-radius: 10px; /* Round corners of the captured image */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }

@@ -5,8 +5,8 @@ import PageContainer from '../components/PageContainer';
 import '../css/CapturePage.css'; // Make sure the CSS file is in the same directory
 
 const videoConstraints = {
-    width: 1280,
-    height: 720,
+    width: 400,
+    height: 400,
     facingMode: "user",
 };
 
@@ -50,7 +50,7 @@ const CapturePage = () => {
                     )}
                 </div>
                 {imageSrc ? (
-                    <div>
+                    <div className="button-container">
                         <button onClick={retakeImage} className="capture-button">TRY AGAIN</button>
                         <button onClick={continueWithImage} className="capture-button">CONTINUE</button>
                     </div>
