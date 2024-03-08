@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/InformationScreen.css';
 import {useNavigate} from "react-router-dom";
+import PageContainer from "../components/PageContainer";
 
 const InformationScreen = () => {
     const navigate = useNavigate();
@@ -11,7 +12,7 @@ const InformationScreen = () => {
     };
 
     return (
-        <div className="information-page">
+        <PageContainer>
             <div className="information-container">
                 <h1 className="title">AI Image Generator</h1>
                 <p className="description">
@@ -25,7 +26,7 @@ const InformationScreen = () => {
                 </p>
                 <button className="accept-button" onClick={handleAccept}>PRESS HERE TO TRY!</button>
             </div>
-        </div>
+        </PageContainer>
     );
 }
 

@@ -1,0 +1,12 @@
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Use full viewport height */
+    padding: 20px;
+    box-sizing: border-box;
+    background: url('../images/header-test.png') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    color: white; /* Adjust based on your design */
+}

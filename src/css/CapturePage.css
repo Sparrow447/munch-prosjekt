@@ -1,0 +1,46 @@
+.capture-container {
+    max-width: 800px; /* Adjust width as necessary */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for legibility */
+    padding: 40px;
+    border-radius: 10px;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+}
+
+.capture-container h1 {
+    margin-bottom: 20px;
+}
+
+.webcam-container {
+    position: relative;
+    display: inline-block;
+}
+
+.webcam-view {
+    border-radius: 10px; /* Round corners of the webcam view */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%; /* Make the overlay the same size as the webcam video */
+    height: auto;
+}
+
+.capture-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px auto;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
