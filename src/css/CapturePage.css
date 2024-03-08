@@ -44,3 +44,8 @@
     font-size: 16px;
     border-radius: 4px;
 }
+
+.captured-image {
+    width: 100%; /* Make the captured image the same size as the webcam video */
+    border-radius: 10px; /* Round corners of the captured image */
+}
