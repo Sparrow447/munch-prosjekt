@@ -1,0 +1,39 @@
+.face-not-detected-container {
+    max-width: 800px; /* Adjust width as necessary */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for legibility */
+    padding: 40px;
+    border-radius: 10px;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+}
+
+.face-not-detected-container h1 {
+    margin-bottom: 20px;
+    /* Your styling here */
+}
+
+.face-not-detected-container p {
+    text-align: left;
+    /* Your styling here */
+}
+
+.try-again-button, .exit-button {
+    background-color: #4CAF50; /* Adjust color as needed */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    /* Additional styling as needed */
+}
+
+.exit-button {
+    background-color: #f44336; /* Adjust color as needed for exit button */
+}
+

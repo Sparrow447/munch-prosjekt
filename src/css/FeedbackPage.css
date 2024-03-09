@@ -1,0 +1,93 @@
+.feedback-container {
+    max-width: 800px; /* Adjust width as necessary */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for legibility */
+    padding: 40px;
+    border-radius: 10px;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+}
+
+.feedback-container h1 {
+    margin-bottom: 20px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+}
+
+.rating label {
+    margin: 0 5px;
+}
+
+input[type='range'] {
+    -webkit-appearance: none; /* Override default appearance */
+    appearance: none;
+    width: 100%; /* Full width of the parent */
+    height: 2px; /* Slider line height */
+    background: #ddd; /* Background of the slider line */
+    outline: none; /* Remove the outline */
+    opacity: 0.7; /* Slightly transparent */
+    -webkit-transition: opacity 0.2s; /* Transition for when hovered */
+    transition: opacity 0.2s;
+}
+
+input[type='range']:hover {
+    opacity: 1; /* Fully opaque when hovered */
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default appearance */
+    appearance: none;
+    width: 20px; /* Width of the slider handle */
+    height: 20px; /* Height of the slider handle */
+    background: #4CAF50; /* Slider handle color */
+    cursor: pointer; /* Cursor type on hover */
+    border-radius: 50%; /* Make the slider handle circular */
+}
+
+input[type='range']::-moz-range-thumb {
+    width: 20px; /* Width of the slider handle */
+    height: 20px; /* Height of the slider handle */
+    background: #4CAF50; /* Slider handle color */
+    cursor: pointer; /* Cursor type on hover */
+    border-radius: 50%; /* Make the slider handle circular */
+}
+
+.submit-button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.slider-question {
+    margin: 20px 0;
+}
+
+.slider-question p {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.slider-container {
+    position: relative;
+    padding: 0 10px; /* Add padding to prevent the slider handle from being cut off */
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #fff;
+    padding: 0 10px; /* Align with the slider's padding */
+}
