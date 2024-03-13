@@ -12,7 +12,7 @@
 
 /* Common styles for all pages */
 .pages-container {
-    max-width: 70vw; /* Adjust width as necessary */
+    max-width: 60vw; /* Adjust width as necessary */
     padding: 40px;
     border-radius: 10px;
     color: #fff;
