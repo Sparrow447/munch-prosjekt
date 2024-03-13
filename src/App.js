@@ -5,11 +5,12 @@ import CapturePage from "./pages/CapturePage";
 import ProcessingPage from "./pages/ProcessingPage";
 import FaceNotDetectedPage from "./pages/FaceNotDetectedPage";
 import FeedbackPage from "./pages/FeedbackPage";
+import PageContainer from "./components/PageContainer";
 
 function App() {
   return (
       <Router>
-        <div>
+        <PageContainer>
           <Routes>
             <Route path="/" element={<InformationScreen />} />
             <Route path="/terms" element={<TermsPage />} />
@@ -18,7 +19,7 @@ function App() {
             <Route path="/noface" element={<FaceNotDetectedPage />} />
             <Route path="/feedback" element={<FeedbackPage />} />
           </Routes>
-        </div>
+        </PageContainer>
       </Router>
   );
 }
