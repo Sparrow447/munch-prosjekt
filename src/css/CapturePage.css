@@ -34,27 +34,3 @@
     height: auto;
 }
 
-.capture-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 20px auto;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 4px;
-}
-
-.captured-image {
-    width: 100%; /* Make the captured image the same size as the webcam video */
-    border-radius: 10px; /* Round corners of the captured image */
-}
-
-.button-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}

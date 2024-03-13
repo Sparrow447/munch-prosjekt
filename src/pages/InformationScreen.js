@@ -13,7 +13,7 @@ const InformationScreen = () => {
 
     return (
         <PageContainer>
-            <div className="information-container">
+            <div className="pages-container">
                 <h1 className="title">AI Image Generator</h1>
                 <p className="description">
                     Transform your selfie into a masterpiece in this captivating art installation.
@@ -24,7 +24,9 @@ const InformationScreen = () => {
                     Dive into a world where every selfie tells a story, inviting reflection on our digital
                     selves. Join this artistic adventure, and see yourself in a new light.
                 </p>
-                <button className="accept-button" onClick={handleAccept}>PRESS HERE TO TRY!</button>
+                <div className="button-container">
+                    <button className="button" onClick={handleAccept}>PRESS HERE TO TRY!</button>
+                </div>
             </div>
         </PageContainer>
     );

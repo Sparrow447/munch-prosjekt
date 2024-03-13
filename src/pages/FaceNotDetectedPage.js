@@ -18,7 +18,7 @@ const FaceNotDetectedPage = () => {
 
     return (
         <PageContainer>
-            <div className="face-not-detected-container">
+            <div className="pages-container">
                 <h1>Face Not Detected</h1>
                 <p>
                     Oops! It looks like we couldn't capture your face properly.
@@ -38,11 +38,13 @@ const FaceNotDetectedPage = () => {
                 <p>
                     Ready to try again?
                 </p>
-                <button onClick={handleTryAgain} className="try-again-button">TRY AGAIN</button>
-                <button onClick={handleExit} className="exit-button">EXIT</button>
+                <div className="button-container">
+                    <button onClick={handleTryAgain} className="button">TRY AGAIN</button>
+                    <button onClick={handleExit} className="button">EXIT</button>
+                </div>
             </div>
         </PageContainer>
-    );
+);
 };
 
 export default FaceNotDetectedPage;

@@ -51,11 +51,11 @@ const CapturePage = () => {
                 </div>
                 {imageSrc ? (
                     <div className="button-container">
-                        <button onClick={retakeImage} className="capture-button">TRY AGAIN</button>
-                        <button onClick={continueWithImage} className="capture-button">CONTINUE</button>
+                        <button onClick={retakeImage} className="button">TRY AGAIN</button>
+                        <button onClick={continueWithImage} className="button">CONTINUE</button>
                     </div>
                 ) : (
-                    <button onClick={capture} className="capture-button">CAPTURE SELFIE</button>
+                    <button onClick={capture} className="button">CAPTURE SELFIE</button>
                 )}
             </div>
         </PageContainer>

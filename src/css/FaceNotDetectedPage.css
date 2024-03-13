@@ -18,22 +18,3 @@
     /* Your styling here */
 }
 
-.try-again-button, .exit-button {
-    background-color: #4CAF50; /* Adjust color as needed */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
-    /* Additional styling as needed */
-}
-
-.exit-button {
-    background-color: #f44336; /* Adjust color as needed for exit button */
-}
-

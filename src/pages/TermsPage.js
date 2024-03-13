@@ -21,7 +21,7 @@ const TermsPage = () => {
 
     return (
         <PageContainer>
-            <div className="terms-content">
+            <div className="pages-container">
                 <h1>Consent Form</h1>
                 <p>
                     Thank you for participating in our interactive art installation. Before we begin, we need your
@@ -57,7 +57,9 @@ const TermsPage = () => {
                 </label>
                 <p>I am 13 years old or older and agree to the Terms and Conditions and Privacy Policy. By checking this
                     box, I acknowledge that I have read, understood, and consent to the terms and policies outlined.</p>
-                <button className="continue-button" onClick={handleContinue}>CONTINUE</button>
+                <div className="button-container">
+                    <button className="button" onClick={handleContinue}>CONTINUE</button>
+                </div>
             </div>
         </PageContainer>
     );

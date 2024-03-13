@@ -18,7 +18,7 @@ const FeedbackPage = () => {
 
     return (
         <PageContainer>
-            <div className="feedback-container">
+            <div className="pages-container">
                 <h1>Rate Your Experience</h1>
                 <form onSubmit={handleSubmit}>
                     <div>
@@ -73,8 +73,9 @@ const FeedbackPage = () => {
                             </div>
                         </div>
                     </div>
-
-                    <button type="submit" className="submit-button">SUBMIT!</button>
+                    <div className="button-container">
+                        <button type="submit" className="button">SUBMIT!</button>
+                    </div>
                 </form>
             </div>
         </PageContainer>
