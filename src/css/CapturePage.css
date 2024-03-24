@@ -2,17 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 800px; /* Adjust width as necessary */
     background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for legibility */
     padding: 40px;
     border-radius: 10px;
     color: #fff;
     margin: auto;
     text-align: center;
-}
-
-.capture-container h1 {
-    margin-bottom: 20px;
 }
 
 .webcam-container {
@@ -22,6 +17,10 @@
 
 .webcam-view {
     border-radius: 10px; /* Round corners of the webcam view */
+}
+
+.mirrored {
+    transform: scaleX(-1);
 }
 
 .overlay {

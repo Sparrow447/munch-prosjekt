@@ -22,9 +22,12 @@ const TermsPage = () => {
     return (
         <PageContainer>
             <div className="pages-container">
-                <h1>Consent Form</h1>
+                <div className="header-container">
+                    <h1>Consent Form</h1>
+                </div>
+
                 <p>
-                    Thank you for participating in our interactive art installation. Before we begin, we need your
+                Thank you for participating in our interactive art installation. Before we begin, we need your
                     consent for the use of your photograph during this exhibit. Please read the following terms and
                     conditions.
                 </p>

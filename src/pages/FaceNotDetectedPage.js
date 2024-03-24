@@ -19,7 +19,9 @@ const FaceNotDetectedPage = () => {
     return (
         <PageContainer>
             <div className="pages-container">
-                <h1>Face Not Detected</h1>
+                <div className="header-container">
+                    <h1>Face Not Detected</h1>
+                </div>
                 <p>
                     Oops! It looks like we couldn't capture your face properly.
                 </p>
@@ -44,7 +46,7 @@ const FaceNotDetectedPage = () => {
                 </div>
             </div>
         </PageContainer>
-);
+    );
 };
 
 export default FaceNotDetectedPage;

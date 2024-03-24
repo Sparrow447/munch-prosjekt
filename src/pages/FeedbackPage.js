@@ -19,7 +19,10 @@ const FeedbackPage = () => {
     return (
         <PageContainer>
             <div className="pages-container">
-                <h1>Rate Your Experience</h1>
+                <div className="header-container">
+                    <h1>Rate Your Experience</h1>
+                </div>
+
                 <form onSubmit={handleSubmit}>
                     <div>
                         <p>How was your overall experience?</p>

@@ -32,35 +32,39 @@ const CapturePage = () => {
 
     return (
         <PageContainer>
-            <div className="capture-container">
-                <h1>Take A Selfie</h1>
-                <div className="webcam-container">
+            <div className="pages-container">
+                <div className="header-container">
+                    <h1>Take A Selfie</h1>
+                </div>
+                <div className="capture-container">
+
+                    <div className="webcam-container">
+                        {imageSrc ? (
+                            <img src={imageSrc} alt="Captured" className="captured-image"/>
+                        ) : (
+                            <Webcam
+                                audio={false}
+                                height={videoConstraints.height}
+                                ref={webcamRef}
+                                screenshotFormat="image/jpeg"
+                                width={videoConstraints.width}
+                                videoConstraints={videoConstraints}
+                                className="webcam-view mirrored" // Add the 'mirrored' class here
+                            />
+                        )}
+                    </div>
                     {imageSrc ? (
-                        <img src={imageSrc} alt="Captured" className="captured-image"/>
+                        <div className="button-container">
+                            <button onClick={retakeImage} className="button">TRY AGAIN</button>
+                            <button onClick={continueWithImage} className="button">CONTINUE</button>
+                        </div>
                     ) : (
-                        <Webcam
-                            audio={false}
-                            height={videoConstraints.height}
-                            ref={webcamRef}
-                            screenshotFormat="image/jpeg"
-                            width={videoConstraints.width}
-                            videoConstraints={videoConstraints}
-                            className="webcam-view"
-                        />
+                        <button onClick={capture} className="button">CAPTURE SELFIE</button>
                     )}
                 </div>
-                {imageSrc ? (
-                    <div className="button-container">
-                        <button onClick={retakeImage} className="button">TRY AGAIN</button>
-                        <button onClick={continueWithImage} className="button">CONTINUE</button>
-                    </div>
-                ) : (
-                    <button onClick={capture} className="button">CAPTURE SELFIE</button>
-                )}
             </div>
         </PageContainer>
     );
 };
 
 export default CapturePage;
-

@@ -12,6 +12,9 @@
 
 /* Common styles for all pages */
 .pages-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     max-width: 60vw; /* Adjust width as necessary */
     padding: 40px;
     border-radius: 10px;
@@ -20,14 +23,22 @@
     text-align: left;
 }
 
+.header-container {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0; /* Adjust as necessary */
+}
+
 h1 {
-    margin-bottom: 20px;
-    font-size: 2em; /* or your preferred size */
+    margin-top: 0;
+    font-size: 4em; /* or your preferred size */
     text-align: center;
 }
 
+p {
+    font-size: 1.75em;
+}
 .description {
-    margin-bottom: 20px;
     line-height: 1.5;
     text-align: left;
 }
@@ -50,7 +61,7 @@ h1 {
     text-align: center; /* Keeps text aligned to the center */
     text-decoration: none; /* No text decoration */
     display: inline-block; /* Allows the button to sit inline with other elements */
-    font-size: 1em; /* Adjusted font size to em for relative sizing */
+    font-size: 1.25em; /* Adjusted font size to em for relative sizing */
     margin: 0.25em 0.125em; /* Adjusted margin to em for consistency */
     cursor: pointer; /* Cursor to indicate clickable area */
     border-radius: 0.625em; /* Adjusted border-radius to em for a consistent look */
@@ -69,4 +80,7 @@ h1 {
     transform: translateY(0.125em); /* Adjusted transform to em for a consistent "pushed" effect */
 }
 
+.button-container {
+    margin-top: 1em; /* Adjusted margin for spacing */
+}
 

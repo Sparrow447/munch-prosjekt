@@ -12,21 +12,26 @@ const InformationScreen = () => {
     };
 
     return (
-        <div className="pages-container">
-            <h1 className="title">AI Image Generator</h1>
-            <p className="description">
-                Transform your selfie into a masterpiece in this captivating art installation.
-                Experience the fusion of your identity with iconic art styles, sparking conversations
-                on digital ethics and the power of technology.
-            </p>
-            <p className="description">
-                Dive into a world where every selfie tells a story, inviting reflection on our digital
-                selves. Join this artistic adventure, and see yourself in a new light.
-            </p>
-            <div className="button-container">
-                <button className="button" onClick={handleAccept}>PRESS HERE TO TRY!</button>
+        <PageContainer>
+            <div className="pages-container">
+                <div className="header-container">
+                    <h1>AI Image Generator</h1>
+                </div>
+
+                <p className="description">
+                    Transform your selfie into a masterpiece in this captivating art installation.
+                    Experience the fusion of your identity with iconic art styles, sparking conversations
+                    on digital ethics and the power of technology.
+                </p>
+                <p className="description">
+                    Dive into a world where every selfie tells a story, inviting reflection on our digital
+                    selves. Join this artistic adventure, and see yourself in a new light.
+                </p>
+                <div className="button-container">
+                    <button className="button" onClick={handleAccept}>PRESS HERE TO TRY!</button>
+                </div>
             </div>
-        </div>
+        </PageContainer>
     );
 }
 
