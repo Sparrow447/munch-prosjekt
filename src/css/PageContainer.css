@@ -16,6 +16,7 @@
     flex-direction: column;
     justify-content: center;
     max-width: 60vw; /* Adjust width as necessary */
+    max-height: 100vh;
     padding: 40px;
     border-radius: 10px;
     color: #fff;
@@ -36,7 +37,7 @@ h1 {
 }
 
 p {
-    font-size: 1.75em;
+    font-size: calc(1em + 0.5vw); /* Increase font size as viewport width increases */
 }
 .description {
     line-height: 1.5;
