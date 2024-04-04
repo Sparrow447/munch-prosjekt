@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PageContainer from '../components/PageContainer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngry, faFrown, faMeh, faSmile, faGrinStars } from '@fortawesome/free-regular-svg-icons';
 import '../css/FeedbackPage.css'; // Make sure the CSS file is in the same directory
 
 const FeedbackPage = () => {
@@ -8,13 +10,22 @@ const FeedbackPage = () => {
     const [rating, setRating] = useState(null);
     const [reflection, setReflection] = useState(50);
     const [clarity, setClarity] = useState(50);
+    const [userInput, setUserInput] = useState(''); // New state variable for the user input
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        const feedbackData = { rating, reflection, clarity };
+        const feedbackData = { rating, reflection, clarity, userInput };
         console.log(feedbackData); // Replace with a POST request to your server
         navigate('/'); // Navigate to a thank you page or back home
     };
+
+    const ratingIcons = [
+        { value: 'Terrible', icon: faAngry, color: 'red' },
+        { value: 'Bad', icon: faFrown, color: 'orange' },
+        { value: 'So-so', icon: faMeh, color: 'yellow' },
+        { value: 'Good', icon: faSmile, color: 'lightgreen' },
+        { value: 'Superb', icon: faGrinStars, color: 'green' },
+    ];
 
     return (
         <PageContainer>
@@ -27,15 +38,16 @@ const FeedbackPage = () => {
                     <div>
                         <p>How was your overall experience?</p>
                         <div className="rating">
-                            {['Terrible', 'Bad', 'So-so', 'Good', 'Superb'].map((item, index) => (
+                            {ratingIcons.map((item, index) => (
                                 <label key={index}>
-                                    <input
-                                        type="radio"
-                                        name="rating"
-                                        value={item}
-                                        onChange={() => setRating(item)}
+                                    <FontAwesomeIcon
+                                        icon={item.icon}
+                                        size="4x" // Adjust the size of the icon
+                                        color={rating === item.value ? item.color : 'gray'}
+                                        onClick={() => setRating(item.value)}
+                                        className={`rating-icon rating-icon-${index}`}
                                     />
-                                    {item}
+                                    <span>{item.value}</span> {/* Add this line */}
                                 </label>
                             ))}
                         </div>
@@ -50,7 +62,10 @@ const FeedbackPage = () => {
                                 max="100"
                                 value={reflection}
                                 step="10" // This sets the slider to move in increments of 10%
-                                onChange={(e) => setReflection(e.target.value)}
+                                onChange={(e) => {
+                                    setReflection(e.target.value);
+                                    e.target.style.setProperty('--slider-percentage', `${e.target.value}%`);
+                                }}
                             />
                             <div className="slider-labels">
                                 <span>Not at all!</span>
@@ -68,7 +83,10 @@ const FeedbackPage = () => {
                                 max="100"
                                 value={clarity}
                                 step="10" // This sets the slider to move in increments of 10%
-                                onChange={(e) => setClarity(e.target.value)}
+                                onChange={(e) => {
+                                    setClarity(e.target.value);
+                                    e.target.style.setProperty('--slider-percentage', `${e.target.value}%`);
+                                }}
                             />
                             <div className="slider-labels">
                                 <span>Not at all!</span>
@@ -76,6 +94,16 @@ const FeedbackPage = () => {
                             </div>
                         </div>
                     </div>
+
+                    <div className="input-question">
+                        <p>Please provide additional feedback:</p>
+                        <textarea
+                            value={userInput}
+                            onChange={(e) => setUserInput(e.target.value)}
+                            placeholder="Type your feedback here..."
+                        />
+                    </div>
+
                     <div className="button-container">
                         <button type="submit" className="button">SUBMIT!</button>
                     </div>

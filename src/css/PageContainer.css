@@ -19,9 +19,9 @@
     max-height: 100vh;
     padding: 40px;
     border-radius: 10px;
-    color: #fff;
     margin: auto;
     text-align: left;
+    background: none;
 }
 
 .header-container {
