@@ -27,7 +27,7 @@ const TermsPage = () => {
                 </div>
 
                 <p>
-                Thank you for participating in our interactive art installation. Before we begin, we need your
+                    Thank you for participating in our interactive art installation. Before we begin, we need your
                     consent for the use of your photograph during this exhibit. Please read the following terms and
                     conditions.
                 </p>
@@ -54,12 +54,16 @@ const TermsPage = () => {
                     </ol>
                     <div>Read more....</div>
                 </div>
-                <label className="switch">
-                    <input type="checkbox" checked={isAgreed} onChange={handleAgree}/>
-                    <span className="slider round"></span>
-                </label>
-                <p>I am 13 years old or older and agree to the Terms and Conditions and Privacy Policy. By checking this
-                    box, I acknowledge that I have read, understood, and consent to the terms and policies outlined.</p>
+                <div className="consent-container">
+                    <p>I am 13 years old or older and agree to the Terms and Conditions and Privacy Policy. By checking
+                        this
+                        box, I acknowledge that I have read, understood, and consent to the terms and policies
+                        outlined.</p>
+                    <label className="switch" htmlFor="checkbox">
+                        <input type="checkbox" id="checkbox" checked={isAgreed} onChange={handleAgree}/>
+                        <div className="slider round"></div>
+                    </label>
+                </div>
                 <div className="button-container">
                     <button className="button" onClick={handleContinue}>CONTINUE</button>
                 </div>

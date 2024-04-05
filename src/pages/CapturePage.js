@@ -40,7 +40,7 @@ const CapturePage = () => {
 
                     <div className="webcam-container">
                         {imageSrc ? (
-                            <img src={imageSrc} alt="Captured" className="captured-image"/>
+                            <img src={imageSrc} alt="Captured" className="captured-image mirrored"/> // Add the 'mirrored' class here
                         ) : (
                             <Webcam
                                 audio={false}
