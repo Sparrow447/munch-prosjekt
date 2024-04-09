@@ -42,7 +42,7 @@ const FeedbackPage = () => {
                                 <label key={index}>
                                     <FontAwesomeIcon
                                         icon={item.icon}
-                                        size="4x" // Adjust the size of the icon
+                                        size="3x" // Adjust the size of the icon
                                         color={rating === item.value ? item.color : 'gray'}
                                         onClick={() => setRating(item.value)}
                                         className={`rating-icon rating-icon-${index}`}
