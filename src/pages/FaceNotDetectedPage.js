@@ -22,9 +22,9 @@ const FaceNotDetectedPage = () => {
                 <div className="header-container">
                     <h1>Face Not Detected</h1>
                 </div>
-                <p>
+                <h2>
                     Oops! It looks like we couldn't capture your face properly.
-                </p>
+                </h2>
                 <p>
                     For a smooth experience, please find your way to the marked area on the ground.
                 </p>
@@ -37,9 +37,9 @@ const FaceNotDetectedPage = () => {
                     Keeping a relaxed, neutral face helps us recognize you better.
                     We appreciate your patience and cooperation.
                 </p>
-                <p>
+                <h2>
                     Ready to try again?
-                </p>
+                </h2>
                 <div className="button-container">
                     <button onClick={handleTryAgain} className="button">TRY AGAIN</button>
                     <button onClick={handleExit} className="button">EXIT</button>

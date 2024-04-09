@@ -28,7 +28,6 @@ const ProcessingPage = ({ mockImage }) => {
 
                 const result = await response.json();
                 setProcessedImage(result.processedImage); // Assuming the response contains the processed image
-                navigate('/result', { state: { image: result.processedImage } });
             } catch (error) {
                 console.error('There was a problem with the fetch operation:', error);
             }
@@ -36,6 +35,16 @@ const ProcessingPage = ({ mockImage }) => {
 
         processImage();
     }, [image, navigate]);
+
+    // Add a new useEffect hook for the delay and navigation
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            navigate('/feedback'); // replace '/feedback' with the actual path to the FeedbackPage
+        }, 10000); // 10 seconds
+
+        // Cleanup function to clear the timeout if the component unmounts before the timeout finishes
+        return () => clearTimeout(timer);
+    }, [navigate]); // dependency array
 
     return (
         <PageContainer>
@@ -63,12 +72,6 @@ const ProcessingPage = ({ mockImage }) => {
                             </linearGradient>
                         </defs>
                         <g fill="none" stroke-linecap="round" stroke-width="16">
-                            {/* Commented out the track
-                            <g className="ip__track" stroke="#ddd">
-                            <path d="M8,64s0-56,60-56,60,112,120,112,60-56,60-56"/>
-                            <path d="M248,64s0-56-60-56-60,112-120,112S8,64,8,64"/>
-                            </g>
-                            */}
                             <g stroke-dasharray="180 656">
                                 <path className="ip__worm1" stroke="url(#grad1)" stroke-dashoffset="0"
                                       d="M8,64s0-56,60-56,60,112,120,112,60-56,60-56"/>

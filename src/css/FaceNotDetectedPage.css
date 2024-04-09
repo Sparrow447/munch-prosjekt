@@ -1,20 +1,15 @@
-.face-not-detected-container {
-    max-width: 800px; /* Adjust width as necessary */
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for legibility */
-    padding: 40px;
-    border-radius: 10px;
-    color: #fff;
-    margin: auto;
-    text-align: center;
+.button-container .button {
+    margin-right: 20px; /* Adjust the value as needed */
 }
 
-.face-not-detected-container h1 {
-    margin-bottom: 20px;
-    /* Your styling here */
+.button-container .button:last-child {
+    margin-right: 0; /* Remove the margin from the last button to prevent extra space on the right */
 }
 
-.face-not-detected-container p {
-    text-align: left;
-    /* Your styling here */
+.pages-container p {
+    font-weight: normal;
 }
 
+h2 {
+    margin: 20px;
+}

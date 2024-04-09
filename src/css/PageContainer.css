@@ -61,6 +61,7 @@ p {
     padding: 0.9375em 2em; /* Adjusted padding to em for consistency */
     text-align: center; /* Keeps text aligned to the center */
     text-decoration: none; /* No text decoration */
+    font-weight: bold; /* Bold font for emphasis */
     display: inline-block; /* Allows the button to sit inline with other elements */
     font-size: 1.25em; /* Adjusted font size to em for relative sizing */
     margin: 0.25em 0.125em; /* Adjusted margin to em for consistency */
