@@ -16,9 +16,10 @@ const InformationScreen = () => {
             <div className="information-container">
                 <h1 className="title">AI Image Generator</h1>
                 <p className="description">
-                    Transform your selfie into a masterpiece in this captivating art installation.
-                    Experience the fusion of your identity with iconic art styles, sparking conversations
-                    on digital ethics and the power of technology.
+                    "Welcome to a transformative experience where art meets algorithm. Our exhibit, 'Selfie-stand med AI-manipulation,'
+                    invites you to explore the unforeseen and often unsettling consequences of AI in our daily lives.
+                    Step into a world where your image is no longer your own, and witness firsthand the powerful impact of deepfake technology.
+                    This interactive journey challenges you to question the boundaries of ownership and privacy in the digital age."
                 </p>
                 <p className="description">
                     Dive into a world where every selfie tells a story, inviting reflection on our digital
